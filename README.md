@@ -25,6 +25,8 @@ npm start
 
 The Express server listens on `PORT` (default `3000`) and `HOST` (default `0.0.0.0`). The build creates the server middleware consumed by `express-server.mjs`.
 
+For static hosting providers that expect a `dist/client` publish directory, the build also mirrors the generated Nitro public assets into `dist/client` via the included `netlify.toml` and build script compatibility step.
+
 ## Supabase configuration
 
 Set the Supabase values required by the integrations in your environment:

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && node ./scripts/prepare-deploy-output.mjs",
     "start": "node --env-file-if-exists=.env express-server.mjs",
     "preview": "node --env-file-if-exists=.env express-server.mjs",
     "lint": "eslint .",
