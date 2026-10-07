@@ -30,4 +30,10 @@ function copyDirectory(src, dest) {
 }
 
 copyDirectory(sourceDir, targetDir);
+
+// Add _redirects file for Netlify client-side routing
+const redirectsPath = path.join(targetDir, '_redirects');
+if (!fs.existsSync(redirectsPath)) {
+  fs.writeFileSync(redirectsPath, '/* /index.html 200\n');
+}
 console.log(`Prepared deployment output at ${targetDir}`);
