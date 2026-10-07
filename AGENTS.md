@@ -1,0 +1,2 @@
+- Theme state is represented by the `dark` class on the root element and persisted under `mindmesh-theme`, so every surface follows semantic CSS tokens without component-level theme branching.
+- The hero headline is an accessible canvas particle system built from semantic text; keep its DOM label and reduced-motion rendering intact.

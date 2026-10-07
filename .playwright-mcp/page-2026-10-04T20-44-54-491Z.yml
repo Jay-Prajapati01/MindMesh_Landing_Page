@@ -1,0 +1,324 @@
+- generic [ref=f2e2]:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - generic:
+          - generic: © 2026
+          - generic: MindMesh
+      - paragraph: SCROLL TO ENTER ↓
+  - generic [ref=f2e4]:
+    - banner [ref=f2e5]:
+      - generic [ref=f2e6]:
+        - link "MindMesh" [ref=f2e7] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=f2e18]:
+          - link "Features" [ref=f2e19] [cursor=pointer]:
+            - /url: "#features"
+          - link "How it works" [ref=f2e20] [cursor=pointer]:
+            - /url: "#how"
+          - link "Graph" [ref=f2e21] [cursor=pointer]:
+            - /url: "#graph"
+          - link "Open Source" [ref=f2e22] [cursor=pointer]:
+            - /url: "#open-source"
+          - link "Beta" [ref=f2e23] [cursor=pointer]:
+            - /url: /beta
+        - generic [ref=f2e24]:
+          - button "Switch to dark theme" [ref=f2e25] [cursor=pointer]
+          - link "Star" [ref=f2e26] [cursor=pointer]:
+            - /url: https://github.com
+          - link "Get Started" [ref=f2e29] [cursor=pointer]:
+            - /url: /join
+          - link "Contact" [ref=f2e31] [cursor=pointer]:
+            - /url: /contact
+    - main [ref=f2e32]:
+      - generic [ref=f2e34]:
+        - generic [ref=f2e35]:
+          - generic [ref=f2e36]: ● AI SECOND BRAIN — PRIVATE & SELF-HOSTED
+          - heading "YOU SAW IT. MINDMESH REMEMBERS." [level=1] [ref=f2e37]
+          - paragraph [ref=f2e40]: MindMesh unifies YouTube, PDFs, Audio, Instagram, Web & Docs into one brain you can talk to.
+          - generic [ref=f2e41]:
+            - link "Start Building Free" [ref=f2e42] [cursor=pointer]:
+              - /url: /join
+            - link "See How it Works" [ref=f2e45] [cursor=pointer]:
+              - /url: "#how"
+        - generic [ref=f2e47]:
+          - generic [ref=f2e48]: mindmesh.local / chat / thread-42
+          - complementary [ref=f2e54]:
+            - paragraph [ref=f2e55]: SOURCES · 1,284
+            - generic [ref=f2e61]:
+              - paragraph [ref=f2e62]: Karpathy — LLM intro
+              - paragraph [ref=f2e63]: Video
+            - generic [ref=f2e69]:
+              - paragraph [ref=f2e70]: Attention Is All You Need
+              - paragraph [ref=f2e71]: PDF
+            - generic [ref=f2e77]:
+              - paragraph [ref=f2e78]: Team standup 12/09
+              - paragraph [ref=f2e79]: Audio
+            - generic [ref=f2e85]:
+              - paragraph [ref=f2e86]: "@designmatters reel"
+              - paragraph [ref=f2e87]: Reel
+            - generic [ref=f2e93]:
+              - paragraph [ref=f2e94]: paulgraham.com/essays
+              - paragraph [ref=f2e95]: Web
+          - generic [ref=f2e96]:
+            - generic [ref=f2e97]: What did Karpathy say about tokenization vs. the attention paper?
+            - generic [ref=f2e98]:
+              - paragraph [ref=f2e99]: Karpathy calls tokenization "the root of much weirdness" [1], while Vaswani et al. treat it as a fixed preprocessing step before self-attention [2]. Your standup note links this to the BPE bug [3].
+              - generic [ref=f2e100]:
+                - generic [ref=f2e101]: 94% CONFIDENCE
+                - generic [ref=f2e102]: "[1] 00:41:12"
+                - generic [ref=f2e103]: "[2] p.3"
+                - generic [ref=f2e104]: "[3] 02:15"
+            - generic [ref=f2e105]: Ask your brain anything…
+      - generic [ref=f2e111]:
+        - generic [ref=f2e113]:
+          - generic [ref=f2e114]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+          - generic [ref=f2e115]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+          - generic [ref=f2e116]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+          - generic [ref=f2e117]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+        - generic [ref=f2e119]:
+          - generic [ref=f2e120]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+          - generic [ref=f2e121]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+          - generic [ref=f2e122]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+          - generic [ref=f2e123]: YOUTUBE • PDF • AUDIO • INSTAGRAM • WEB • DOCS • GRAPH RAG • CHAT •
+      - generic [ref=f2e125]:
+        - generic [ref=f2e126]: "[ Manifesto ]"
+        - paragraph [ref=f2e128]:
+          - generic [ref=f2e129]: EVERYTHING
+          - generic [ref=f2e130]: YOU
+          - generic [ref=f2e131]: WATCH,
+          - generic [ref=f2e137]: READ,
+          - generic [ref=f2e147]: HEAR
+          - generic [ref=f2e162]: AND
+          - generic [ref=f2e163]: SAVE
+          - generic [ref=f2e164]: —
+          - generic [ref=f2e165]: UNIFIED
+          - generic [ref=f2e166]: INTO
+          - generic [ref=f2e167]: ONE
+          - generic [ref=f2e168]: BRAIN
+          - generic [ref=f2e169]: YOU
+          - generic [ref=f2e170]: CAN
+          - generic [ref=f2e171]: TALK
+          - generic [ref=f2e172]: TO.
+      - generic [ref=f2e173]:
+        - generic [ref=f2e175]:
+          - generic [ref=f2e176]: "[ From noise to knowledge ]"
+          - heading "One flow. Zero hunting." [level=2] [ref=f2e178]
+        - generic [ref=f2e181]:
+          - article [ref=f2e183]:
+            - generic [aria-hidden] [ref=f2e184]: "01"
+            - generic [ref=f2e185]: CHAOS
+            - generic [ref=f2e191]:
+              - generic [ref=f2e192]: STEP / 01
+              - heading "The Problem" [level=3] [ref=f2e193]
+              - paragraph [ref=f2e194]: Your knowledge is scattered across tabs, bookmarks, reels, voice notes and PDFs you'll never find again.
+          - article [ref=f2e197]:
+            - generic [aria-hidden] [ref=f2e198]: "02"
+            - generic [ref=f2e199]: MINDMESH
+            - generic [ref=f2e214]:
+              - generic [ref=f2e215]: STEP / 02
+              - heading "The MindMesh Way" [level=3] [ref=f2e216]
+              - paragraph [ref=f2e217]: Ingest anything. Ask in plain English. Get answers with citations pointing to the exact second, page or frame.
+          - article [ref=f2e220]:
+            - generic [aria-hidden] [ref=f2e221]: "03"
+            - generic [ref=f2e222]: CLARITY
+            - generic [ref=f2e227]:
+              - generic [ref=f2e228]: STEP / 03
+              - heading "The Result" [level=3] [ref=f2e229]
+              - paragraph [ref=f2e230]: A private second brain with a living knowledge graph and a timeline of everything you've learned.
+      - generic [ref=f2e233]:
+        - generic [ref=f2e234]:
+          - generic [ref=f2e235]: "[ Features ]"
+          - heading "One Brain. Every Source." [level=2] [ref=f2e237]
+        - generic [ref=f2e238]:
+          - generic [ref=f2e241]:
+            - generic [ref=f2e242]:
+              - generic [ref=f2e243]: 01 / 06
+              - heading "YouTube Intelligence" [level=3] [ref=f2e249]
+              - paragraph [ref=f2e250]: Paste a link — get transcript, summary and auto-chapters in minutes.
+              - generic [ref=f2e251]:
+                - generic [ref=f2e252]: Transcribe
+                - generic [ref=f2e253]: Summarize
+                - generic [ref=f2e254]: Chapterize
+            - generic [ref=f2e255]:
+              - generic [ref=f2e256]:
+                - generic [ref=f2e257]: PREVIEW
+                - generic [ref=f2e258]: LIVE
+              - generic [ref=f2e259]: 00:00 Intro
+              - generic [ref=f2e262]: 04:12 Tokenization
+              - generic [ref=f2e265]: 18:40 Attention
+              - generic [ref=f2e268]: 41:12 Scaling laws
+          - generic [ref=f2e273]:
+            - generic [ref=f2e274]:
+              - generic [ref=f2e275]: 02 / 06
+              - heading "PDF Intelligence" [level=3] [ref=f2e281]
+              - paragraph [ref=f2e282]: Extract → clean → chunk → embed → graph. Every page becomes queryable.
+              - generic [ref=f2e283]:
+                - generic [ref=f2e284]: Extract
+                - generic [ref=f2e285]: Chunk
+                - generic [ref=f2e286]: Embed
+            - generic [ref=f2e287]:
+              - generic [ref=f2e288]:
+                - generic [ref=f2e289]: PREVIEW
+                - generic [ref=f2e290]: LIVE
+              - generic [ref=f2e291]: p.1 Abstract
+              - generic [ref=f2e294]: p.3 Architecture
+              - generic [ref=f2e297]: p.6 Training
+              - generic [ref=f2e300]: 142 chunks indexed
+          - generic [ref=f2e305]:
+            - generic [ref=f2e306]:
+              - generic [ref=f2e307]: 03 / 06
+              - heading "Audio Intelligence" [level=3] [ref=f2e311]
+              - paragraph [ref=f2e312]: Whisper transcription with speaker diarization for calls, notes and podcasts.
+              - generic [ref=f2e313]:
+                - generic [ref=f2e314]: Whisper
+                - generic [ref=f2e315]: Diarization
+                - generic [ref=f2e316]: Search
+            - generic [ref=f2e317]:
+              - generic [ref=f2e318]:
+                - generic [ref=f2e319]: PREVIEW
+                - generic [ref=f2e320]: LIVE
+              - generic [ref=f2e321]: SPK 1 · 00:12
+              - generic [ref=f2e324]: SPK 2 · 00:47
+              - generic [ref=f2e327]: SPK 1 · 02:15
+              - generic [ref=f2e330]: 3 speakers found
+          - generic [ref=f2e335]:
+            - generic [ref=f2e336]:
+              - generic [ref=f2e337]: 04 / 06
+              - heading "Instagram Intelligence" [level=3] [ref=f2e343]
+              - paragraph [ref=f2e344]: Reels, posts and stories — captions plus OCR on every frame you saved.
+              - generic [ref=f2e345]:
+                - generic [ref=f2e346]: Reels
+                - generic [ref=f2e347]: Captions
+                - generic [ref=f2e348]: OCR
+            - generic [ref=f2e349]:
+              - generic [ref=f2e350]:
+                - generic [ref=f2e351]: PREVIEW
+                - generic [ref=f2e352]: LIVE
+              - generic [ref=f2e353]: "@designmatters"
+              - generic [ref=f2e356]: "OCR: “grid first”"
+              - generic [ref=f2e359]: Caption parsed
+              - generic [ref=f2e362]: 12 frames read
+          - generic [ref=f2e367]:
+            - generic [ref=f2e368]:
+              - generic [ref=f2e369]: 05 / 06
+              - heading "Web Intelligence" [level=3] [ref=f2e375]
+              - paragraph [ref=f2e376]: Crawl a page or a whole site and index it as clean, linked knowledge.
+              - generic [ref=f2e377]:
+                - generic [ref=f2e378]: Crawl
+                - generic [ref=f2e379]: Index
+                - generic [ref=f2e380]: Clip
+            - generic [ref=f2e381]:
+              - generic [ref=f2e382]:
+                - generic [ref=f2e383]: PREVIEW
+                - generic [ref=f2e384]: LIVE
+              - generic [ref=f2e385]: paulgraham.com
+              - generic [ref=f2e388]: 212 pages crawled
+              - generic [ref=f2e391]: Links resolved
+              - generic [ref=f2e394]: Indexed ✓
+          - generic [ref=f2e399]:
+            - generic [ref=f2e400]:
+              - generic [ref=f2e401]: 06 / 06
+              - heading "Document Intelligence" [level=3] [ref=f2e408]
+              - paragraph [ref=f2e409]: PDF, DOCX, TXT, MD, EPUB — drop the whole folder, it all connects.
+              - generic [ref=f2e410]:
+                - generic [ref=f2e411]: DOCX
+                - generic [ref=f2e412]: Markdown
+                - generic [ref=f2e413]: EPUB
+            - generic [ref=f2e414]:
+              - generic [ref=f2e415]:
+                - generic [ref=f2e416]: PREVIEW
+                - generic [ref=f2e417]: LIVE
+              - generic [ref=f2e418]: notes.md
+              - generic [ref=f2e421]: thesis.docx
+              - generic [ref=f2e424]: dune.epub
+              - generic [ref=f2e427]: 38 entities linked
+      - generic [ref=f2e431]:
+        - generic [ref=f2e432]: "[ How it works ]"
+        - heading "Four steps to total recall." [level=2] [ref=f2e434]
+        - generic [ref=f2e437]:
+          - generic [ref=f2e438]:
+            - generic [ref=f2e439]: "01"
+            - heading "CAPTURE" [level=3] [ref=f2e440]
+            - paragraph [ref=f2e441]: Drop any link or file.
+          - generic [ref=f2e442]:
+            - generic [ref=f2e443]: "02"
+            - heading "UNDERSTAND" [level=3] [ref=f2e444]
+            - paragraph [ref=f2e445]: Chunk + embed in Qdrant.
+          - generic [ref=f2e446]:
+            - generic [ref=f2e447]: "03"
+            - heading "CONNECT" [level=3] [ref=f2e448]
+            - paragraph [ref=f2e449]: GraphRAG entities + relations.
+          - generic [ref=f2e450]:
+            - generic [ref=f2e451]: "04"
+            - heading "ASK" [level=3] [ref=f2e452]
+            - paragraph [ref=f2e453]: Hybrid search + cited answers.
+        - paragraph [ref=f2e456]: $ Your knowledge, unified.
+      - generic [ref=f2e458]:
+        - generic [ref=f2e459]: "[ Showcase ]"
+        - heading "Built like a real OS." [level=2] [ref=f2e461]
+        - generic [ref=f2e462]:
+          - generic [ref=f2e464]:
+            - generic [ref=f2e469]:
+              - heading "Unified AI Chat" [level=3] [ref=f2e470]
+              - paragraph [ref=f2e471]: Persistent threads, citations, confidence.
+            - generic [ref=f2e472]:
+              - generic [ref=f2e473]: Compare the two papers on RAG?
+              - generic [ref=f2e474]: Paper A favors dense retrieval [1]; Paper B shows sparse + graph fusion wins on multi-hop [2].
+              - generic [ref=f2e475]: 94% CONFIDENCE
+          - generic [ref=f2e485]:
+            - heading "Knowledge Graph" [level=3] [ref=f2e486]
+            - paragraph [ref=f2e487]: Entities & relations, live.
+          - generic [ref=f2e501]:
+            - generic [ref=f2e507]:
+              - heading "Memory Timeline" [level=3] [ref=f2e508]
+              - paragraph [ref=f2e509]: Everything, in order.
+            - generic [ref=f2e510]:
+              - generic [ref=f2e511]: Saved reel
+              - generic [ref=f2e513]: Read PDF
+              - generic [ref=f2e515]: Watched talk
+          - generic [ref=f2e518]:
+            - generic [ref=f2e526]:
+              - heading "Cross-Source Compare" [level=3] [ref=f2e527]
+              - paragraph [ref=f2e528]: Video vs. paper vs. notes.
+            - generic [ref=f2e529]:
+              - generic [ref=f2e530]: "YT: agrees"
+              - generic [ref=f2e531]: "PDF: differs"
+          - generic [ref=f2e533]:
+            - generic [ref=f2e542]:
+              - heading "Browser Extension" [level=3] [ref=f2e543]
+              - paragraph [ref=f2e544]: One-click clip any page.
+            - generic [ref=f2e545]: Clip to MindMesh
+          - generic [ref=f2e553]:
+            - generic [ref=f2e558]:
+              - heading "Realtime Progress" [level=3] [ref=f2e559]
+              - paragraph [ref=f2e560]: SSE-streamed pipeline status.
+            - paragraph [ref=f2e562]: EMBEDDING · 72%
+      - generic [ref=f2e564]:
+        - generic [ref=f2e566]:
+          - generic [ref=f2e567]: "01"
+          - generic [ref=f2e568]: CAPTURE
+          - generic [ref=f2e569]: Bring your scattered knowledge into one intelligent space.
+        - generic [ref=f2e571]:
+          - generic [ref=f2e572]: "02"
+          - generic [ref=f2e573]: CONNECT
+          - generic [ref=f2e574]: Discover relationships between the information you already have.
+        - generic [ref=f2e576]:
+          - generic [ref=f2e577]: "03"
+          - generic [ref=f2e578]: RECALL
+          - generic [ref=f2e579]: Ask your knowledge and find the context you need, when you need it.
+      - generic [ref=f2e581]:
+        - heading "Stop searching. Start asking." [level=2] [ref=f2e582]
+        - link "Get MindMesh Free" [ref=f2e584] [cursor=pointer]:
+          - /url: /join
+        - paragraph [ref=f2e587]: Private Beta • Limited Spots • Early Access
+    - contentinfo [ref=f2e588]:
+      - generic [ref=f2e589]:
+        - link "MindMesh" [ref=f2e590] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f2e601]:
+          - link "GitHub" [ref=f2e602] [cursor=pointer]:
+            - /url: https://github.com
+          - link "Docs" [ref=f2e606] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=f2e607]: Made by Jay Prajapati
