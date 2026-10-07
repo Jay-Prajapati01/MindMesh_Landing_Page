@@ -13,7 +13,7 @@ export default defineConfig({
     tanstackStart({
       server: { entry: "server" },
     }),
-    nitro({ preset: "node-middleware" }),
+    nitro({ preset: process.env.VERCEL ? "vercel" : "node-middleware" }),
     react(),
   ],
 });

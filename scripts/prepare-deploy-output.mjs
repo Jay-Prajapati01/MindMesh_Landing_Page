@@ -6,6 +6,11 @@ const sourceDir = path.join(rootDir, '.output', 'public');
 const targetDir = path.join(rootDir, 'dist', 'client');
 
 if (!fs.existsSync(sourceDir)) {
+  // Vercel builds use the Nitro `vercel` preset (.vercel/output), not .output/public.
+  if (process.env.VERCEL && fs.existsSync(path.join(rootDir, '.vercel', 'output'))) {
+    console.log('Vercel build detected (.vercel/output) - skipping dist/client preparation.');
+    process.exit(0);
+  }
   throw new Error(`Deployment source directory does not exist: ${sourceDir}`);
 }
 
