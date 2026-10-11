@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X } from "lucide-react";
 
-export const DISCORD_INVITE_URL = "https://discord.gg/sqwGrTABA";
+export const DISCORD_INVITE_URL = "https://discord.gg/cKs6pEjwn";
 
 type Props = {
   open: boolean;

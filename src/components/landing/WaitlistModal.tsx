@@ -58,9 +58,14 @@ export function WaitlistProvider({ children }: { children: ReactNode }) {
 
   // Per-form invite: every successful submit shows the Discord popup after the
   // thank-you panel appears. No cross-form suppression — each form owns its invite.
+  // The Radix success dialog is closed first: a modal Radix Dialog traps pointer
+  // events and focus, which would otherwise swallow clicks on the invite popup.
   useEffect(() => {
     if (state !== "done") return;
-    const t = window.setTimeout(() => setShowDiscord(true), 700);
+    const t = window.setTimeout(() => {
+      setIsOpen(false);
+      setShowDiscord(true);
+    }, 700);
     return () => window.clearTimeout(t);
   }, [state]);
 
