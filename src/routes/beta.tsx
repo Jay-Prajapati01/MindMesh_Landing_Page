@@ -33,7 +33,7 @@ function BetaPage() {
           </h1>
           <p className="mt-6 max-w-md text-lg text-ink-muted">Get early access. Test new capabilities. Help shape MindMesh before public launch.</p>
           <div className="brut mt-8 rounded-3xl bg-paper-card p-6">
-            <p className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted">[ ~3–5 minutes ]</p>
+            <p className="font-mono text-xs font-bold uppercase tracking-widest text-ink-muted">[ ~4–6 minutes ]</p>
             <p className="mt-2 font-display text-2xl uppercase">Serious testers only</p>
           </div>
         </motion.div>
