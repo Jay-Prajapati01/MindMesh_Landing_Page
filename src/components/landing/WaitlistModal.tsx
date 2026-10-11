@@ -1,9 +1,10 @@
 "use client";
 
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import { z } from "zod";
 import { Check, Send, ArrowLeft, ArrowRight } from "lucide-react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
+import { DiscordInviteModal } from "@/components/landing/DiscordInviteModal";
 
 const ROLES = ["Student", "Developer / Engineer", "Researcher", "Creator", "Founder / Entrepreneur", "Working Professional", "Other"] as const;
 const SAVE_TYPES = ["YouTube videos", "Web pages / Articles", "PDFs / Documents", "Notes", "Instagram / Social Media content", "Other"] as const;
@@ -53,6 +54,15 @@ export function WaitlistProvider({ children }: { children: ReactNode }) {
   const [wish, setWish] = useState("");
   const [errors, setErrors] = useState<Partial<Record<string, string>>>({});
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [showDiscord, setShowDiscord] = useState(false);
+
+  // Per-form invite: every successful submit shows the Discord popup after the
+  // thank-you panel appears. No cross-form suppression — each form owns its invite.
+  useEffect(() => {
+    if (state !== "done") return;
+    const t = window.setTimeout(() => setShowDiscord(true), 700);
+    return () => window.clearTimeout(t);
+  }, [state]);
 
   const open = () => {
     // Reset everything so a returning visitor never sees the previous answers
@@ -60,6 +70,7 @@ export function WaitlistProvider({ children }: { children: ReactNode }) {
     setStep(0);
     setState("idle");
     setErrors({});
+    setShowDiscord(false);
     setName("");
     setEmail("");
     setRole("Student");
@@ -70,7 +81,10 @@ export function WaitlistProvider({ children }: { children: ReactNode }) {
     setIsOpen(true);
   };
 
-  const close = () => setIsOpen(false);
+  const close = () => {
+    setShowDiscord(false);
+    setIsOpen(false);
+  };
 
   function toggle(list: string[], set: (v: string[]) => void, value: string) {
     set(list.includes(value) ? list.filter((v) => v !== value) : [...list, value]);
@@ -138,6 +152,7 @@ export function WaitlistProvider({ children }: { children: ReactNode }) {
   const success = (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className="brut max-w-lg rounded-3xl border-2 border-ink bg-paper p-8 shadow-[6px_6px_0_var(--ink)]">
+        <DialogTitle className="sr-only">You are on the waitlist</DialogTitle>
         <div className="flex flex-col items-start justify-center gap-5">
           <span className="brut grid h-16 w-16 place-items-center rounded-2xl bg-orange"><Check className="h-8 w-8" /></span>
           <h2 className="font-display text-4xl uppercase">You're on the list.</h2>
@@ -150,6 +165,7 @@ export function WaitlistProvider({ children }: { children: ReactNode }) {
   return (
     <WaitlistContext.Provider value={{ open }}>
       {children}
+      <DiscordInviteModal open={showDiscord} onClose={() => setShowDiscord(false)} />
       {state === "done" ? (
         success
       ) : (

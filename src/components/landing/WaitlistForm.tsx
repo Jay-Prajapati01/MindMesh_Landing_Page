@@ -1,8 +1,9 @@
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { z } from "zod";
 import { Check, Send } from "lucide-react";
 import { motion } from "motion/react";
 import { Label, EASE } from "./ui";
+import { DiscordInviteModal } from "./DiscordInviteModal";
 
 const ROLES = ["Student", "Developer / Engineer", "Researcher", "Creator", "Founder / Entrepreneur", "Working Professional", "Other"] as const;
 const SAVE_TYPES = ["YouTube videos", "Web pages / Articles", "PDFs / Documents", "Notes", "Instagram / Social Media content", "Other"] as const;
@@ -29,6 +30,15 @@ export function WaitlistForm() {
   const [wish, setWish] = useState("");
   const [errors, setErrors] = useState<Partial<Record<string, string>>>({});
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [showDiscord, setShowDiscord] = useState(false);
+
+  // Per-form invite: every successful submit shows the Discord popup after the
+  // thank-you panel appears. No cross-form suppression — each form owns its invite.
+  useEffect(() => {
+    if (state !== "done") return;
+    const t = window.setTimeout(() => setShowDiscord(true), 700);
+    return () => window.clearTimeout(t);
+  }, [state]);
 
   function toggle(list: string[], set: (v: string[]) => void, value: string) {
     set(list.includes(value) ? list.filter((v) => v !== value) : [...list, value]);
@@ -83,6 +93,7 @@ export function WaitlistForm() {
         <span className="brut grid h-16 w-16 place-items-center rounded-2xl bg-orange"><Check className="h-8 w-8" /></span>
         <h2 className="font-display text-4xl uppercase">You're on the list.</h2>
         <p className="text-ink-muted">Thanks for joining the MindMesh early access. We'll be in touch soon.</p>
+        <DiscordInviteModal open={showDiscord} onClose={() => setShowDiscord(false)} />
       </div>
     );
   }

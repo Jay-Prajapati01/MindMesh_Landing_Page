@@ -1,8 +1,9 @@
-import { useState, type FormEvent, type ReactNode } from "react";
+import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import { z } from "zod";
 import { Check, Send, ArrowLeft, ArrowRight } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { EASE } from "./ui";
+import { DiscordInviteModal } from "./DiscordInviteModal";
 
 // Beta responses sheet. The tab must be named 'Beta' (the script renames the
 // first tab automatically if it is missing). Same no-cors caveat as the
@@ -52,6 +53,15 @@ export function BetaApplicationForm() {
   const [anythingElse, setAnythingElse] = useState("");
   const [errors, setErrors] = useState<Partial<Record<string, string>>>({});
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [showDiscord, setShowDiscord] = useState(false);
+
+  // Per-form invite: every successful submit shows the Discord popup after the
+  // thank-you panel appears. No cross-form suppression — each form owns its invite.
+  useEffect(() => {
+    if (state !== "done") return;
+    const t = window.setTimeout(() => setShowDiscord(true), 700);
+    return () => window.clearTimeout(t);
+  }, [state]);
 
   function toggle(list: string[], set: (v: string[]) => void, value: string, max: number) {
     if (list.includes(value)) set(list.filter((v) => v !== value));
@@ -133,6 +143,7 @@ export function BetaApplicationForm() {
         <span className="brut grid h-16 w-16 place-items-center rounded-2xl bg-orange"><Check className="h-8 w-8" /></span>
         <h2 className="font-display text-4xl uppercase">Application received.</h2>
         <p className="text-ink-muted">Thanks for applying to be a MindMesh Beta Tester. We'll review your application and get back to you soon.</p>
+        <DiscordInviteModal open={showDiscord} onClose={() => setShowDiscord(false)} />
       </div>
     );
   }

@@ -1,10 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { z } from "zod";
 import { Check, Send } from "lucide-react";
 import { motion } from "motion/react";
 import { Navbar, Footer } from "@/components/landing/Sections";
 import { Crumb, EASE } from "@/components/landing/ui";
+import { DiscordInviteModal } from "@/components/landing/DiscordInviteModal";
 
 // Contact responses sheet. The tab must be named 'Contact' (the script renames
 // the first tab automatically if it is missing). Same no-cors caveat as the
@@ -46,6 +47,15 @@ function ContactPage() {
   const [topic, setTopic] = useState<(typeof TOPICS)[number]>("General");
   const [errors, setErrors] = useState<Partial<Record<string, string>>>({});
   const [state, setState] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [showDiscord, setShowDiscord] = useState(false);
+
+  // Per-form invite: every successful submit shows the Discord popup after the
+  // thank-you panel appears. No cross-form suppression — each form owns its invite.
+  useEffect(() => {
+    if (state !== "done") return;
+    const t = window.setTimeout(() => setShowDiscord(true), 700);
+    return () => window.clearTimeout(t);
+  }, [state]);
 
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -130,6 +140,7 @@ function ContactPage() {
         </motion.div>
       </main>
       <Footer />
+      <DiscordInviteModal open={showDiscord} onClose={() => setShowDiscord(false)} />
     </div>
   );
 }
